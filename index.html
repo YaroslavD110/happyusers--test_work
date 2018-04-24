@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>DRAG AND DROP FILE UPLOAD</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Tajawal" rel="stylesheet" />
+    <link rel="stylesheet" href="css/main.min.css" />
+</head>
+<body>
+
+    <div id="drag-container">
+        <div id="drop-field">
+            <div id="drag-cover">
+                <h2>Drop here!</h2>
+            </div>
+
+            <div id="thumbnails">
+
+            </div>
+
+            <form id="main-form" enctype="multipart/form-data" action="php/upload.php" method="post">
+                <div class="info-box">
+                    <h3>Drag and drop your image here</h3>
+                    <h4>or <label for="form_input">select some files</label></h4>
+                </div>
+
+                <input type="file" id="form_input" name="images[]" multiple />
+            </form>
+        </div>
+    </div>
+
+    <script src="js/index.min.js"></script>
+</body>
+</html>
